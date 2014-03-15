@@ -199,6 +199,7 @@ static pthread_cond_t s_state_cond = PTHREAD_COND_INITIALIZER;
 static int s_port = -1;
 static const char * s_device_path = NULL;
 static int          s_device_socket = 0;
+const char * ril_inst_id = NULL;
 
 /* trigger change to this with s_state_cond */
 static int s_closed = 0;
